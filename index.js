@@ -65,8 +65,68 @@
 // console.log(`plus: ${plus}, minus: ${minus}, mult: ${mult}, divide: ${divide}, pow: ${pow}`)
 // //
 
+// const title = document.querySelector("#title");
+
+// title.innerHTML = "Hi! From JS";
+// title.style.color = "red";
+// document.title = "I own you now";
+// //
+
+// function handleClick() {
+//   title.style.color = "blue";
+// }
+
+// title.addEventListener("click", handleClick);
+// //
+// if ("nicolas" == "nicolas") {
+//   console.log("hi");
+// } else if ("10" === "10") {
+//   console.log("ho");
+// } else {
+//   console.log("lalala");
+// }
+// //
+// const age = prompt("How old are U");
+// console.log(age);
+// //
+// const age = prompt("How old are U");
+
+// if (age >= 18 && age <= 21) {
+//   console.log("you can drink but you should not");
+// } else if (age > 21) {
+//   console.log("go ahead");
+// } else {
+//   console.log("you cant");
+// }
+// //
 const title = document.querySelector("#title");
 
-title.innerHTML = "Hi! From JS";
-title.style.color = "red";
-document.title = "I own you now";
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#e74c3c";
+
+function handleClick() {
+  const currentColor = title.style.color;
+  console.log(currentColor);
+  if (currentColor == BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("click", handleClick);
+}
+init();
+
+function handleOffline() {
+  console.log("Bye Bye");
+}
+
+function handleOnline() {
+  console.log("Welcome back");
+}
+
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
