@@ -26,3 +26,44 @@ difference between '' and "" and ``
 /
 /
 /
+
+DOM(Document Object Model)
+
+#1.1
+
+/\* it changes color of the id==title when clicked
+
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "red";
+const OTHER_COLOR = "#7f8c8d";
+
+function handle_click() {
+const current_color = title.style.color;
+if (current_color == BASE_COLOR) {
+title.style.color = OTHER_COLOR;
+} else {
+title.style.color = BASE_COLOR;
+}
+}
+
+function init() {
+title.style.color = BASE_COLOR;
+title.addEventListener("click", handle_click);
+}
+init();
+
+\*/
+
+/\* it can check my network condition
+function handle_offline() {
+console.log("you are offlined from network");
+}
+
+function handle_online() {
+console.log("you are onlined from network");
+}
+
+window.addEventListener("offline", handle_offline);
+window.addEventListener("online", handle_online);
+\*/

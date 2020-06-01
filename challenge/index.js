@@ -79,6 +79,95 @@ const plus = calculator.plus(5, 5)
 console.log(plus)
 */
 
-/* function with string
+//const title = document.getElementById("title");
 
+//const title = document.querySelector("#title");
+
+/*
+console.log(title);
+
+title.innerHTML = "Hi! from js"; // it changes the content of id==title
+title.style.color = "red"; // it changes the color of "Hi! from js"
+document.title = "this is tab title";
+console.dir(title);
 */
+
+/* when resized, it print "resize" on the console
+function handle_resize() {
+  console.log("I have been resized");
+}
+
+window.addEventListener("resize", handle_resize);
+*/
+
+/* this means call function right now
+window.addEventListener("resize", handle_resize)
+*/
+
+/* condition stuff 
+const age = prompt("How old are you");
+
+if (age >= 18 && age <= 21) {
+  console.log("you can drink but you should not");
+} else if (age > 21) {
+  console.log("go ahead");
+} else {
+  console.log("too young");
+}
+*/
+
+/* it changes color of the id==title when clicked my mouse pointer
+const title = document.querySelector("#title");
+
+const BASE_COLOR = "red";
+const OTHER_COLOR = "#7f8c8d";
+
+function handle_click() {
+  const current_color = title.style.color;
+  if (current_color == BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("click", handle_click);
+}
+init();
+*/
+
+/* it can check my network condition
+function handle_offline() {
+  console.log("you are offlined from network");
+}
+
+function handle_online() {
+  console.log("you are onlined from network");
+}
+
+window.addEventListener("offline", handle_offline);
+window.addEventListener("online", handle_online);
+*/
+
+const title = document.querySelector("#title");
+
+const CLICKED_CLASS = "clicked";
+
+function handle_click() {
+  /*
+  const has_class = title.classList.contains(CLICKED_CLASS);
+  if (!has_class) {
+    title.classList.add(CLICKED_CLASS); // set value
+  } else {
+    title.classList.remove(CLICKED_CLASS);
+  }
+  this is same as below */
+  title.classList.toggle(CLICKED_CLASS);
+}
+
+function init() {
+  title.addEventListener("click", handle_click);
+}
+init();
