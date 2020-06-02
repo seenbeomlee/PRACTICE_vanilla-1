@@ -86,6 +86,7 @@ to divide 'AM' and 'PM'
 ---
 
 1 JSON.stringify() => it changes all data to string format.
+
 = Since 'localStorage' cannot store js-data, we need to change all data to 'string' format.
 
 2 JSON.parse() => it changes all string format to object (normal form) that js can understand.
@@ -110,6 +111,7 @@ to divide 'AM' and 'PM'
 # 1 What is the benefit of loading Js at the bottom as opposed to the top of the document?
 
 1 generally, page loading starts top to bottom. So if we put Js code to the top, the total loading time is being longer
+
 2 so, if we put external js code files at the bottom of our page, we give the priority of our HTTP requests to the display visual things first that will be presented to the client instead of to the logic of interaction or dynamics.
 
 reference: https://stackoverflow.com/questions/5329807/benefits-of-loading-js-at-the-bottom-as-opposed-to-the-top-of-the-document
@@ -117,31 +119,47 @@ reference: https://stackoverflow.com/questions/5329807/benefits-of-loading-js-at
 # 2 difference between "==" and "===" in js
 
 1 "==" uses implicit casting to compare. So the type of the variable doesn't matter.
+
 2 However, since "===" does not use implicit casting, so it is more strict than "==". it checks 'data' and also 'type'
+
 3 0 == "0" // true -- it will casted to string
+
 4 0 == [] // true -- it will casted
+
 5 "0" == [] // false -- it will casted -- false!@
 
 # 3 difference between "var", "let", and "const"
 
 1 js follows "Function-level scope" unlike other programming-languages follow "Block-level scope".
+
 2 "hoisting"
 
 3 Var
+
 4 it follows "function-level scope" => it is dangerous(global variable)
+
 5 it permits duplicated variable names
+
 6 hoisting = var "Declare" and "Initialize" together
 
 7 Let
+
 8 let follows "block-level scope"
+
 9 let does not permit duplicated variable names => it will be SyntaxError
+
 10 let seperates "Declare" and "Initialize"
+
 11 it permits the "reallocation"
 
 12 Const
+
 13 it is for "constant", but it is similar to the 'let'
+
 14 it follows "block-level scope"
+
 15 it prohibits the "reallocation"
+
 16 const must! "Declare" and "Initialize" at the same time!
 
 17 they are different about "hoisting"
