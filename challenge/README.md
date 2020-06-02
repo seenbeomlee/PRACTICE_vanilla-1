@@ -2,6 +2,8 @@
 = i will use the repl for restudy & and save here
 #2 Do 2 week chanllenge for practice Vjs
 
+---
+
 #1.0
 = socket.io => demo => Chat with someone in realtime
 = three.js => we can play games with js // like 'World draw'
@@ -17,19 +19,13 @@ Vanilla js => js with none library
 
 vanilla-js.com => vanilla js standard-docs
 
-# difference between 'let' and 'let' and 'const'
-
-# =
-
-# difference between '' and "" and ``
-
-# =
-
 DOM(Document Object Model)
+
+---
 
 #1.1
 
-## \*it changes color of the id==title when clicked
+it changes color of the id==title when clicked
 
 const title = document.querySelector("#title");
 
@@ -53,7 +49,7 @@ init();
 
 ---
 
-## \*it can check my network condition
+it can check my network condition
 
 function handle_offline() {
 console.log("you are offlined from network");
@@ -77,6 +73,8 @@ make a local storage to save user-name
 
 we need to add "<meta charset="utf-8" />" to the head of "index.html" to use some kind of emoji
 
+---
+
 #1.3 feat
 
 i updated "clock.js"
@@ -84,6 +82,8 @@ i updated "clock.js"
 to divide 'AM' and 'PM'
 
 #1.4
+
+---
 
 1 JSON.stringify() => it changes all data to string format.
 = Since 'localStorage' cannot store js-data, we need to change all data to 'string' format.
@@ -96,29 +96,35 @@ to divide 'AM' and 'PM'
 
 5 parseInt(li.id) => it changes "string" to "int".
 
+---
+
 #1.5
 
 1 create a random number in js => using function 'Math.random()', it create random number 0 ~ 1.0000..
 = -so if we wanna create 0~4 random number, then Math.floor(Math.random() \* 5);
 
+---
+
 #1.6
 
-1 What is the benefit of loading Js at the bottom as opposed to the top of the document?
+# 1 What is the benefit of loading Js at the bottom as opposed to the top of the document?
+
 = generally, page loading starts top to bottom. So if we put Js code to the top, the total loading time is being longer
 = so, if we put external js code files at the bottom of our page, we give the priority of our HTTP requests to the display visual things first that will be
 presented to the client instead of to the logic of interaction or dynamics.
 
 reference: https://stackoverflow.com/questions/5329807/benefits-of-loading-js-at-the-bottom-as-opposed-to-the-top-of-the-document
 
-2 difference between "==" and "===" in js
+# 2 difference between "==" and "===" in js
+
 = "==" uses implicit casting to compare. So the type of the variable doesn't matter.
 = However, since "===" does not use implicit casting, so it is more strict than "==". it checks 'data' and also 'type'
-
 = 0 == "0" // true -- it will casted to string
 = 0 == [] // true -- it will casted
 = "0" == [] // false -- it will casted -- false!@
 
-3 difference between "var", "let", and "const"
+# 3 difference between "var", "let", and "const"
+
 js follows "Function-level scope" unlike other programming-languages follow "Block-level scope".
 "hoisting"
 -Var
@@ -141,6 +147,10 @@ js follows "Function-level scope" unlike other programming-languages follow "Blo
 they are different about "hoisting"
 
 if you use "ES6" the use of "var" KEYWORD is not recommended.
+
+# 4 difference between '' and "" and ``
+
+=
 
 reference: https://poiemaweb.com/es6-block-scope
 
