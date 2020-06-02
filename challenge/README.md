@@ -109,48 +109,50 @@ to divide 'AM' and 'PM'
 
 # 1 What is the benefit of loading Js at the bottom as opposed to the top of the document?
 
-= generally, page loading starts top to bottom. So if we put Js code to the top, the total loading time is being longer
-= so, if we put external js code files at the bottom of our page, we give the priority of our HTTP requests to the display visual things first that will be
-presented to the client instead of to the logic of interaction or dynamics.
+1 generally, page loading starts top to bottom. So if we put Js code to the top, the total loading time is being longer
+2 so, if we put external js code files at the bottom of our page, we give the priority of our HTTP requests to the display visual things first that will be presented to the client instead of to the logic of interaction or dynamics.
 
 reference: https://stackoverflow.com/questions/5329807/benefits-of-loading-js-at-the-bottom-as-opposed-to-the-top-of-the-document
 
 # 2 difference between "==" and "===" in js
 
-= "==" uses implicit casting to compare. So the type of the variable doesn't matter.
-= However, since "===" does not use implicit casting, so it is more strict than "==". it checks 'data' and also 'type'
-= 0 == "0" // true -- it will casted to string
-= 0 == [] // true -- it will casted
-= "0" == [] // false -- it will casted -- false!@
+1 "==" uses implicit casting to compare. So the type of the variable doesn't matter.
+2 However, since "===" does not use implicit casting, so it is more strict than "==". it checks 'data' and also 'type'
+3 0 == "0" // true -- it will casted to string
+4 0 == [] // true -- it will casted
+5 "0" == [] // false -- it will casted -- false!@
 
 # 3 difference between "var", "let", and "const"
 
-js follows "Function-level scope" unlike other programming-languages follow "Block-level scope".
-"hoisting"
--Var
-= it follows "function-level scope" => it is dangerous(global variable)
-= it permits duplicated variable names
-= hoisting = var "Declare" and "Initialize" together
+1 js follows "Function-level scope" unlike other programming-languages follow "Block-level scope".
+2 "hoisting"
 
--Let
-= let follows "block-level scope"
-= let does not permit duplicated variable names => it will be SyntaxError
-= let seperates "Declare" and "Initialize"
-= it permits the "reallocation"
+3 Var
+4 it follows "function-level scope" => it is dangerous(global variable)
+5 it permits duplicated variable names
+6 hoisting = var "Declare" and "Initialize" together
 
--Const
-= it is for "constant", but it is similar to the 'let'
-= it follows "block-level scope"
-= it prohibits the "reallocation"
-= const must! "Declare" and "Initialize" at the same time!
+7 Let
+8 let follows "block-level scope"
+9 let does not permit duplicated variable names => it will be SyntaxError
+10 let seperates "Declare" and "Initialize"
+11 it permits the "reallocation"
 
-they are different about "hoisting"
+12 Const
+13 it is for "constant", but it is similar to the 'let'
+14 it follows "block-level scope"
+15 it prohibits the "reallocation"
+16 const must! "Declare" and "Initialize" at the same time!
 
-if you use "ES6" the use of "var" KEYWORD is not recommended.
+17 they are different about "hoisting"
+
+18 if you use "ES6" the use of "var" KEYWORD is not recommended.
 
 # 4 difference between '' and "" and ``
 
-=
+1
+
+---
 
 reference: https://poiemaweb.com/es6-block-scope
 
