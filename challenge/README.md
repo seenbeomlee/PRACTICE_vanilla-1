@@ -95,3 +95,8 @@ to divide 'AM' and 'PM'
 4 array.filter(function) => filter will implement all elements in the array, and return some elements which return 'true' and make a new array with them.
 
 5 parseInt(li.id) => it changes "string" to "int".
+
+#1.5
+
+1 create a random number in js => using function 'Math.random()', it create random number 0 ~ 1.0000..
+/so if we wanna create 0~4 random number, then Math.floor(Math.random() \* 5);
