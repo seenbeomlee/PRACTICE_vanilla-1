@@ -67,3 +67,10 @@ console.log("you are onlined from network");
 window.addEventListener("offline", handle_offline);
 window.addEventListener("online", handle_online);
 \*/
+
+#1.2
+
+querySelector = bring the first 1 item
+querySelectorAll = bring all the items with an array
+
+make a local storage to save user-name
