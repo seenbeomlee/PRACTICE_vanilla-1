@@ -74,3 +74,11 @@ querySelector = bring the first 1 item
 querySelectorAll = bring all the items with an array
 
 make a local storage to save user-name
+
+we need to add "<meta charset="utf-8" />" to the head of "index.html" to use some kind of emoji
+
+#1.3
+
+i updated "clock.js"
+
+to divide 'AM' and 'PM'
