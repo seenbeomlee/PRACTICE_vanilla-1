@@ -77,8 +77,21 @@ make a local storage to save user-name
 
 we need to add "<meta charset="utf-8" />" to the head of "index.html" to use some kind of emoji
 
-#1.3
+#1.3 feat
 
 i updated "clock.js"
 
 to divide 'AM' and 'PM'
+
+#1.4
+
+1 JSON.stringify() => it changes all data to string format.
+/Since 'localStorage' cannot store js-data, we need to change all data to 'string' format.
+
+2 JSON.parse() => it changes all string format to object (normal form) that js can understand.
+
+3 array.forEach(function) => it implement some functions for each element of the array.
+
+4 array.filter(function) => filter will implement all elements in the array, and return some elements which return 'true' and make a new array with them.
+
+5 parseInt(li.id) => it changes "string" to "int".
