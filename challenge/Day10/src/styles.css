@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+.top {
+  display: flex;
+}
+
+.js-top {
+  margin-left: 10px;
+}
+
+.bottom {
+  display: flex;
+  height: 20px;
+}
+
+.js-form {
+  margin-left: 10px;
+}
+
+.jsPlay {
+  margin-left: 10px;
+  border-radius: 5px;
+}
