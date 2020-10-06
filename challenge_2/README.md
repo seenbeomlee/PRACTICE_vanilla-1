@@ -7,3 +7,7 @@
 ## <script> does not a self closing tag & it can be at the bottom of the <body>
 
 > good
+
+## 'hello' and "hello" are the same
+
+> Yeah,
